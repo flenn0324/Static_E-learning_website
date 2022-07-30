@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> PinoBOOTCAMP inscription</title>
+    <link rel="stylesheet" href="./formstyle.css">
+<body>
+    <!--*****************header**************************-->
+   <header>
+       <h1><a href="../index.html">PinoBOOTCAMP.com</a></h1>
+       <h2>Crée votre compte</h2>
+   </header>
+
+   <!--*****************Formulaire d'inscription**************************-->
+   <!--Chaque input et label est dans div "gauche"/"droite", et le tout est dans div "ligne" Pour faciliter le style-->
+    <main class="formulaire">
+    <fieldset>
+
+        <legend>Inscription</legend>
+
+        <div class="ligne">
+            <div class="gauche">
+                <label for="nom">Nom :</label>
+            </div>
+            <div class="droite">
+                <input type="text" id="nom" placeholder="saisir votre nom">
+            </div>
+        </div>
+        
+        <div class="ligne">
+            <div class="gauche">
+                <label for="prenom">Prénom :</label>
+            </div>
+            <div class="droite">
+                <input type="text" id="prenom" placeholder="saisir votre prénom">
+            </div>
+        </div>
+        
+        <div class="ligne">
+            <div class="gauche">
+                <label>Sexe :</label>
+            </div>
+            <div class="droite">
+                <input type="radio" id="masculin" name="sexe" value="masculin" checked="checked">
+                <label for="masculin">Masculin</label>
+                <input type="radio" id="feminin" name="sexe" value="feminin">
+                <label for="feminin">Féminin</label>
+            </div>
+        </div>
+                 
+        <div class="ligne">
+            <div class="gauche">
+                <label for="dateN">Date de naissance :</label>
+            </div>
+            <div class="droite">
+                <input type="date" id="dateN">
+            </div>
+        </div>
+           
+        <div class="ligne">
+            <div class="gauche">
+                <label for="email">E-mail :</label>
+            </div>
+            <div class="droite">
+                <input type="email" id="email"placeholder="saisir votre e-mail">
+            </div>
+        </div>
+
+        <div class="ligne">
+            <div class="gauche">
+                <label for="cemail">Confirme E-mail :</label>
+            </div>
+            <div class="droite">
+                <input type="email" id="cemail" placeholder="Confirmez votre e-mail">
+            </div>
+        </div>
+
+        <div class="ligne">
+            <div class="gauche">
+                <label for="password">Mot de passe :</label>
+            </div>
+            <div class="droite">
+                <input type="password" id="password" placeholder="saisir votre mot de passe">
+            </div>
+        </div>
+
+        <div class="ligne">
+            <div class="gauche">
+                <label for="cpassword">Confirme mot de passe :</label>
+            </div>
+            <div class="droite">
+                <input type="password" id="cpassword" placeholder="Confirmer votre mot de passe">
+            </div>
+        </div>
+
+        <!--*****************button de validation + des liens vers autres pages**************************-->
+        <div class="btn">
+            <button>Creer le compte</button>
+            <p>En cliquant sur le bouton «creer le compte», vous créez un compte et acceptez les conditions d'utilisation et la politique de confidentialité de PinoBOOTCAMP</p>
+            <p>Vous avez deja un compte ? connecez-vous par<a  href="./connecter.html"> ici</a></p>
+            <p>Vous pouvez revenir à la page d'Accueil en cliquant <a href="../index.html">ici</a></p>
+        </div>
+    </fieldset>
+    </main>
+
+    
+       <!--*****************Footer**************************-->
+    <footer>
+        <div class="copyright">
+            <p>Copyright @ <a href="#">Zakaria Brahimi M1 IL</a> .Tous les droits sont réservés</p> 
+        </div>
+    </footer>
+</body>
+</html>

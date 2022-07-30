@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PinoBOOTCAMP</title>
+    <!--lien pour le document css pour stylè le header et footer-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <style>
+        /*header*/
+        header
+        {
+            height: 120px;
+            width: 100%;
+            margin-bottom: 50px;
+            background-color: white;
+            color: white;
+            position: sticky; top: 0;
+        }
+
+        .titles
+        {
+            height: 40px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            margin-bottom: 0px;
+            background-color: cadetblue;
+        }
+        
+
+       /***********SECTION**********/
+
+       /*description section*/
+       .Accueil
+       {
+           margin: 17px;
+       }
+       .desc
+       {
+           width: 53%;
+           display: inline-block;
+           padding: 25px;
+           background-color: cadetblue;
+           border-radius: 50px;
+       }
+       .desc .firsthead , .desc .lasthead
+       {
+           font-size: 45px;
+           font-style: oblique;
+       }
+        .desc .firsthead
+       {
+           margin-top: 5px;
+           margin-bottom: 0;
+           color: #0e5658;
+       }
+       .desc .lasthead
+       {
+           margin-top: 2px;
+           margin-bottom: 15px;
+           color: #0e5658;
+       }
+       .text p
+       {
+           font-size: 20px;
+           font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+           margin-bottom: 0px;
+           margin-top: 0px;
+           color: white;
+       }
+       .text
+       {
+           margin-bottom: 30px;
+       }
+       .prog-link
+       {
+           font-size: 20px;
+           font-style: oblique;
+           color: white;
+       }
+       .quiz-link
+       {
+           color: white;
+       }
+       .diaporamma
+       {
+           width: 39%;
+           margin: 7px;
+           float: right;
+       }
+       #diapo
+       {
+           width: 100%;
+           height: 400px;
+       }
+       img
+       {
+           border-radius: 100px;
+           border-width: 1px;
+       }
+
+     /*About section */
+       .About
+       {
+           background-color: cadetblue;
+           border-radius: 50px;
+           color: white;
+           margin-top: 50px;
+           margin-left: 20px;
+           margin-right: 20px;
+           padding: 10px;
+       }
+       .About h2
+       {
+           font-size: 35px;
+           color: white;
+           margin-left: 10px;
+           margin-top: 10px;
+           color: #0e5658 ;
+       }
+       .qui
+       {
+           border-radius: 30px;
+           line-height: 2;
+           color: #0e5658 ;
+           background-color: white;
+           padding-left: 20px;
+           padding-bottom: 20px;
+           padding-top: 10px;
+           margin-bottom: 45px;
+           margin-right: 45px;
+           margin-left: 45px;
+       }
+
+       /*Programme section */ 
+       .programme
+       {
+           background-color: cadetblue;
+           border-radius: 30px;
+           margin-top: 50px;
+           margin-left: 20px;
+           margin-right: 20px;
+           margin-bottom: 50px;
+           padding: 10px;
+       }
+       .programme ul li
+       {
+           list-style: none;
+       }
+       .programme h2
+       {
+           font-size: 35px;
+           color: #0e5658 ;
+           margin-left: 10px;
+           margin-top: 10px;
+       }
+       .cours
+       {
+           padding:0;
+       }
+       .cour1 , .cour2 , .cour3
+       {
+           border-radius: 30px;
+           line-height: 2;
+           color: #0e5658 ;
+           background-color: white;
+           padding-left: 20px;
+           padding-bottom: 20px;
+           padding-top: 10px;
+           margin: 30px;
+       }
+       .cours h3
+       {
+           font-size: 25px;
+           margin: 0;
+           font-family: Georgia, 'Times New Roman', Times, serif;
+           text-align: center;
+       }
+    </style>
+
+    <!--SCRIPT JAVASCRIPT POUR LE DIAPORAMMA-->
+    <script>
+        var image_affichee = 'Html';
+
+        function diaporama()
+        {
+            if (image_affichee == 'Html') 
+            {
+                document.getElementById('diapo').setAttribute('src','./photos/html.jpg');
+                image_affichee = 'Css';
+            }
+            else
+            if(image_affichee=='Css')
+            {
+                document.getElementById('diapo').setAttribute('src','./photos/css.jpg');
+                image_affichee = 'Js';
+            }
+            else
+            {
+                document.getElementById('diapo').setAttribute('src','./photos/jss.jpg');
+                image_affichee = 'Html';
+            }
+        }
+    </script>
+
+</head>
+
+
+<body  onload="paysage = setInterval('diaporama()',4000)">
+<!--*****************NAVBAR********************-->
+    <header>
+        <div class="titles">
+            <span class="head">
+                <h1>PinoBOOTCAMP</h1>
+                <h3>Meilleur BOOTCAMP dans l'Algerie</h3>
+            </span>
+        </div>
+
+        <nav class="menu">
+            <ul class="firstmenu">
+                <li><a href="#">Formations</a>
+                     <div class="sub-menu">
+                         <ul>
+                             <li><a href="./cours/HTML/Chap1Html.html" target="_blank">HTML</a></li>
+                             <li><a href="./cours/CSS/chap1css.html" target="_blank">CSS</a></li>
+                             <li><a href="./cours/JS/chap1js.html" target="_blank">Javascript</a></li>
+                         </ul>
+                     </div>
+                </li>
+                <li><a href="#about">Qui sommes nous ?</a></li>
+                <li><a href="#Programme">Programme</a></li>
+                <li><a target="_blank" href="./quiz/quiz.html">QUIZ</a></li>
+                <span class="button">
+                    <li><a target="_blank" href="./Forms/inscrire.html">S'inscrire</a></li>
+                    <li><a target="_blank" href="./Forms/connecter.html">Se connecter</a></li>
+                </span>
+            </ul>
+        </nav>
+    </header>
+
+
+<!--MAIN-->
+    <main>
+
+    <!--************************ 1st section Description SECTION***************************-->    
+        <section class="Accueil">
+            <div class="desc">
+                <h3 class="firsthead">Devenez un développeur frontend &</h3>
+                <h3 class="lasthead">démarrez votre carrière</h3>
+                <div class="text">
+                    <p>Devenez le développeur de la nouvelle génération.</p>
+                    <p>apprendre les compétences et les technologies de la nouvelle ère.</p>
+                </div>
+                <div class="prog-link">
+                    <p>Allez voir notre programme en cliquant sur ce button</p>
+                    <button><a href="#Programme">Voir le programme</a></button>
+                </div>
+                <div class="quiz-link" >
+                    <p>Vous avez deja les competences ? Passez le QUIZ pour voir votre niveau maintenant! <button><a href="./quiz/quiz.html" target="_blank">QUIZ</a></button></p>  
+                </div>
+            </div>
+            <div class="diaporamma">
+                <div>
+                    <img id="diapo" src="./photos/html.jpg" alt="Code">
+                </div>
+            </div>
+        </section>
+
+
+    <!--********************2nd section ABOUT US SECTION*******************************-->
+        <section class="About" id="about">
+            <h2>Qui sommes nous ?</h2>
+            <p class="qui">
+                 Nous somme une ecole de formation en ligne spécialisé en devloppement web coté frontend .Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br>
+                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+        </section>
+
+
+    <!--*********************3rd sectionProgramme SECTION****************************-->
+        <section>
+            <div class="programme" id="Programme">
+                <h2>PROGRAMME</h2>
+                <ul class="cours">
+                    <div class="cour1">
+                        <h3><li>HTML</li></h3>
+                        <p>
+                            Le HyperText Markup Language, généralement abrégé HTML ou dans sa dernière version HTML5, est le langage de balisage conçu pour représenter les pages web.
+                            Ce langage permet d’écrire de l’hypertexte, d’où son nom, de structurer sémantiquement la page, de mettre en forme le contenu, de créer des formulaires de saisie, d’inclure des ressources multimédias dont des images, des vidéos, et des programmes informatiques, de créer des documents interopérables avec des équipements très variés de manière conforme aux exigences de l’accessibilité du web.
+                            Il est souvent utilisé conjointement avec le langage de programmation JavaScript et des feuilles de style en cascade (CSS). HTML est inspiré du Standard Generalized Markup Language (SGML). Il s'agit d'un format ouvert. <br>
+                            Vous allez etudier ce cour en trois chapitres en 20h
+                        </p>
+                        <p>Commencez à etudier maintenant ! </p>
+                        <button><a href="./cours/HTML/Chap1Html.html" target="_blank">decouvrir plus</a></button>
+                    </div>
+                    <div class="cour2">
+                        <h3><li>CSS</li></h3>
+                        <p>
+                            Les feuilles de style en cascade1, généralement appelées CSS de l'anglais Cascading Style Sheets, forment un langage informatique qui décrit la présentation des documents HTML et XML. Les standards définissant CSS sont publiés par le World Wide Web Consortium (W3C). Introduit au milieu des années 1990, CSS devient couramment utilisé dans la conception de sites web et bien pris en charge par les navigateurs web dans les années 2000. <br>
+                            Vous allez etudier ce cour en trois chapitres en 30h
+                        </p>
+                        <p>Commencez à etudier maintenant ! </p>
+                        <button><a href="./cours/CSS/chap1css.html" target="_blank">decouvrir plus</a></button>
+                    </div>
+                    <div class="cour3">
+                        <h3><li>JavaScript</li></h3>
+                        <p>JavaScript est un langage de programmation de scripts principalement employé dans les pages web interactives et à ce titre est une partie essentielle des applications web. Avec les technologies HTML et CSS, JavaScript est parfois considéré comme l'une des technologies cœur du World Wide Web2. Une grande majorité des sites web l'utilisent3, et la majorité des navigateurs web disposent d'un moteur JavaScript4 dédié pour l'interpréter, indépendamment des considérations de sécurité qui peuvent se poser le cas échéant.
+                            <br>Vous allez etudier ce cour en trois chapitres en 40h
+                        </p> 
+                        <p>Commencez à etudier maintenant ! </p>
+                        <button><a href="./cours/JS/chap1js.html" target="_blank">decouvrir plus</a></button>
+                    </div>
+                </ul>
+            </div>
+        </section>     
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div>
+            <ul class="footer-menu">
+                <li>Contactez-nous
+                    <ul class="fmenu1">
+                        <li><a href="mailto:zakaria.brahimi@hotmail.com">zakaria.brahimi@hotmail.com</a></li>
+                        <li><a href="#">(+213)797782090</a></li>
+                        <li><a href="#">023 23 23 23</a></li>
+                    </ul>
+                </li>
+                <li>Nos partenaires
+                    <ul class="fmenu1">
+                        <li><a href="https://openclassrooms.com/fr/" target="_blank">OpenClassRoom.com</a></li>
+                        <li><a href="https://www.udemy.com/fr/" target="_blank">Udemy.com</a></li>
+                        <li><a href="https://www.w3schools.com/" target="_blank">W3School.com</a></li>
+                    </ul>
+                </li>
+                <li>Rubriques du site
+                    <ul class="fmenu1">
+                        <li><a href="#about">About us</a></li>
+                        <li><a href="#Programme">Programme</a></li>
+                        <li><a target="_blank" href="./quiz/quiz.html">Quiz</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="copyright">
+            Copyright @ <a href="#">Zakaria Brahimi M1 IL</a>
+        </div>
+    </footer>
+    
+    
+</body>
+</html>

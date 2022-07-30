@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Chapitre 2 : Les bases Javascript</title>
+    <link rel="stylesheet" type="text/css" href="../../style.css">
+    <link rel="stylesheet" type="text/css" href="../courstyle.css">
+</head>
+
+<body>
+
+<!-- *****************************************HEADER***************************************** -->
+<!-- ******Concernant les cours j'ai pas respecté la semantique HTML car 
+        premierement : il n ya pas beaucoup de temps
+        deuxiemment : j'ai compris que ce n'est pas l'essentiels de ce projets
+        c'est pour ca j'ai utilisé des "<br>" -->
+    <header>
+        <nav class="menu">
+            <ul class="firstmenu">
+                <li><a href="#">Formations</a>
+                     <div class="sub-menu">
+                         <ul>
+                             <li><a href="../HTML/Chap1Html.html">HTML</a></li>
+                             <li><a href="../CSS/chap1css.html">CSS</a></li>
+                             <li><a href="./chap1js.html">Javascript</a></li>
+                         </ul>
+                     </div>
+                </li>
+                <li><a href="../../index.html#about">Qui sommes nous ?</a></li>
+                <li><a href="../../index.html#Programme">Programme</a></li>
+                <li><a target="_blank" href="../../quiz/quiz.html">QUIZ</a></li>
+                <span class="button">
+                    <li><a target="_blank" href="../../Forms/inscrire.html">S'inscrire</a></li>
+                    <li><a target="_blank" href="../../Forms/connecter.html">Se connecter</a></li>
+                </span>
+            </ul>
+        </nav>
+
+        <div class="head">
+            <h1>Apprennez le Javascript</h1>
+            <h3>Javascript Chapitre 2 : Les bases Javascript</h3>
+        </div>
+    </header>
+
+
+<!-- *****************************************MAIN***************************************** -->
+    <main>
+        <!-- *****************************************MAIN SECTION ( LES COURS )***************************************** -->
+        <section class="main-section">
+            <h1>Les bases Javascript</h1>
+
+            <section class="contenu" id="titre21">
+                <h2>Syntaxe JavaScript</h2>
+                <p>
+                    La syntaxe JavaScript est l'ensemble des règles, comment les programmes JavaScript sont construits. <br>
+                    La syntaxe JavaScript définit deux types de valeurs: <br>
+                    -Valeurs fixes<br>
+                    -Valeurs variables<br>
+                    Les valeurs fixes sont appelées littéraux .<br>
+                    Les valeurs de variable sont appelées variables .<br>
+                    Les deux règles de syntaxe les plus importantes pour les valeurs fixes sont: <br>
+                    1-Les nombres sont écrits avec ou sans décimales. <br>
+                    2-Les chaînes sont du texte, écrit entre guillemets doubles ou simples. <br>
+                    Dans un langage de programmation, des variables sont utilisées pour stocker des valeurs de données. <br>
+                    JavaScript utilise le varmot - clé pour déclarer des variables. <br>
+                    Un signe égal est utilisé pour attribuer des valeurs aux variables.
+                </p>
+            </section>
+
+            <section class="contenu" id="titre22">
+                <h2>Commentaires JavaScript</h2>
+                <p>
+                    Les commentaires JavaScript peuvent être utilisés pour expliquer le code JavaScript et le rendre plus lisible. <br>
+                    Les commentaires JavaScript peuvent également être utilisés pour empêcher l'exécution, lors du test de code alternatif. <br>
+                    Les commentaires sur une seule ligne commencent par //. <br>
+                    Tout texte entre //et la fin de la ligne sera ignoré par JavaScript (ne sera pas exécuté). <br>
+                    Il est plus courant d'utiliser des commentaires sur une seule ligne.Les commentaires de bloc sont souvent utilisés pour la documentation formelle. <br>
+                    <strong>Utilisation des commentaires pour empêcher l'exécution</strong> <br>
+                    L'utilisation de commentaires pour empêcher l'exécution du code convient aux tests de code. <br>
+                    L'ajout //devant une ligne de code change les lignes de code d'une ligne exécutable en commentaire.
+                </p>
+            </section>
+
+            <section class="contenu" id="titre23">
+                <h2>Variables JavaScript</h2>
+                <p>
+                    Les variables JavaScript sont des conteneurs pour stocker les valeurs de données. <br>
+                    Avant 2015, l'utilisation du varmot - clé était le seul moyen de déclarer une variable JavaScript. <br>
+                    La version 2015 de JavaScript (ES6) permet d'utiliser le const mot - clé pour définir une variable qui ne peut pas être réaffectée, et le letmot - clé pour définir une variable à portée restreinte. <br>
+                    Parce qu'il est un peu compliqué de décrire la différence entre ces mots-clés, et parce qu'ils ne sont pas pris en charge dans les navigateurs plus anciens, la première partie de ce didacticiel sera le plus souvent utilisée var. <br>
+                    Safari 10 et Edge 14 ont été les premiers navigateurs à prendre pleinement en charge ES6. <br>
+                    En programmation, tout comme en algèbre, nous utilisons des variables (comme price1) pour contenir des valeurs. <br>
+                    En programmation, tout comme en algèbre, nous utilisons des variables dans les expressions (total = prix1 + prix2). <br>
+                    À partir de l'exemple ci-dessus, vous pouvez calculer le total à 11. <br>
+                    Les variables JavaScript sont des conteneurs pour stocker les valeurs de données. <br>
+                    Toutes les variables JavaScript doivent être identifiées avec des noms uniques . <br>
+                    Ces noms uniques sont appelés identificateurs .<br>
+                    Les identificateurs peuvent être des noms courts (comme x et y) ou des noms plus descriptifs (age, sum, totalVolume).<br>
+                    Les règles générales de construction des noms de variables (identificateurs uniques) sont les suivantes:<br>
+                    -Les noms peuvent contenir des lettres, des chiffres, des traits de soulignement et des signes dollar.<br>
+                    -Les noms doivent commencer par une lettre<br>
+                    -Les noms peuvent également commencer par $ et _ (mais nous ne les utiliserons pas dans ce tutoriel)<br>
+                    -Les noms sont sensibles à la casse (y et Y sont des variables différentes)<br>
+                    -Les mots réservés (comme les mots clés JavaScript) ne peuvent pas être utilisés comme noms<br>
+                    Les identificateurs JavaScript sont sensibles à la casse.
+                </p>
+            </section>
+
+            <section class="contenu" id="titre24">
+                <h2>Opérateurs JavaScript</h2>
+                <p>
+                    L' opérateur d' affectation ( =) attribue une valeur à une variable. <br>
+                    L' opérateur d' addition ( +) ajoute des nombres. <br>
+                    L' opérateur de multiplication ( *) multiplie les nombres. <br>
+                    Les opérateurs arithmétiques sont utilisés pour effectuer de l'arithmétique sur les nombres: <br>
+                    <img src="./photojs1.PNG" alt="tableau" width="100%"> <br>
+                    L' opérateur d' affectation d'addition ( +=) ajoute une valeur à une variable. <br>
+                    L' +opérateur peut également être utilisé pour ajouter (concaténer) des chaînes. <br>
+                    L' +=opérateur d'affectation peut également être utilisé pour ajouter (concaténer) des chaînes. <br>
+                    L'ajout de deux nombres renverra la somme, mais l'ajout d'un nombre et d'une chaîne renverra une chaîne. <br>
+                    Les opérateurs de bits travaillent sur des nombres de 32 bits. <br>
+                    Tout opérande numérique de l'opération est converti en un nombre de 32 bits. Le résultat est reconverti en un nombre JavaScript.
+                </p>
+            </section>
+        </section>
+
+        <!-- *****************************************Aside ( LE SOMMAIRES )***************************************** -->
+        <aside>
+            <div class="aside-title">
+                <h2>Programme Javascript</h2>
+            </div>
+            <ul>
+                <h4><a href="./chap1js.html">Chapitre 1 : Introduction à Javascript</a></h4>
+                   <li><a href="./chap1js.html#titre11">Introduction à JavaScript</a></li>
+                   <li><a href="./chap1js.html#titre12">JavaScript Où aller</a></li>
+                   <li><a href="./chap1js.html#titre13">Sortie JavaScript</a></li>
+                   <li><a href="./chap1js.html#titre14">Déclarations JavaScript</a></li>
+
+                <h4><a href="./chap2js.html">Chapitre 2 : Les bases Javascript</a></h4>
+                   <li><a href="#titre21">Syntaxe JavaScript</a></li>
+                   <li><a href="#titre22">Commentaires JavaScript</a></li>
+                   <li><a href="#titre23">Variables JavaScript</a></li>
+                   <li><a href="#titre24">Opérateurs JavaScript</a></li>
+
+                <h4><a href="./chap3js.html">Chapitre 3 : Javascript Avancé</a></h4>
+                   <li><a href="./chap3js.html#titre31">Types de données JavaScript</a></li>
+                   <li><a href="./chap3js.html#titre32">Fonctions JavaScript</a></li>
+                   <li><a href="./chap3js.html#titre33">Objets JavaScript</a></li>
+                   <li><a href="./chap3js.html#titre34">Événements JavaScript</a></li>
+            </ul>
+        </aside>
+    </main>
+
+
+    <!--*******************************Button*******************************-->
+    <div class="btn">
+        <div class="btn-back">
+            <button><a href="./chap1js.html">chapitre precedant</a></button>
+        </div>
+        <div class="btn-next">
+            <button><a href="./chap3js.html">Chapiter Suivant</a></button>
+        </div>
+    </div>
+
+    
+
+    <!-- ************************************FOOTER********************************* -->
+    <footer>
+        <div>
+            <ul class="footer-menu">
+                <li>Contactez-nous
+                    <ul class="fmenu1">
+                        <li><a href="mailto:zakaria.brahimi@hotmail.com">zakaria.brahimi@hotmail.com</a></li>
+                        <li><a href="#">(+213)797782090</a></li>
+                        <li><a href="#">023 23 23 23</a></li>
+                    </ul>
+                </li>
+                <li>Nos partenaires
+                    <ul class="fmenu1">
+                        <li><a href="https://openclassrooms.com/fr/" target="_blank">OpenClassRoom.com</a></li>
+                        <li><a href="https://www.udemy.com/fr/" target="_blank">Udemy.com</a></li>
+                        <li><a href="https://www.w3schools.com/" target="_blank">W3School.com</a></li>
+                    </ul>
+                </li>
+                <li>Rubriques du site
+                    <ul class="fmenu1">
+                        <li><a href="../../index.html#about">About us</a></li>
+                        <li><a href="../../index.html#Programme">Programme</a></li>
+                        <li><a target="_blank" href="../../quiz/quiz.html">Quiz</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="copyright">
+            Copyright @ <a href="#">Zakaria Brahimi M1 IL</a>
+        </div>
+    </footer>
+    
+</body>
+</html>

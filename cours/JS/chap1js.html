@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Chapitre 1 : Introduction à Javascript </title>
+    <link rel="stylesheet" type="text/css" href="../../style.css">
+    <link rel="stylesheet" type="text/css" href="../courstyle.css">
+</head>
+
+<body>
+
+<!-- *****************************************HEADER***************************************** -->
+<!-- ******Concernant les cours j'ai pas respecté la semantique HTML car 
+        premierement : il n ya pas beaucoup de temps
+        deuxiemment : j'ai compris que ce n'est pas l'essentiels de ce projets
+        c'est pour ca j'ai utilisé des "<br>" -->
+    <header>
+        <nav class="menu">
+            <ul class="firstmenu">
+                <li><a href="#">Formations</a>
+                     <div class="sub-menu">
+                         <ul>
+                             <li><a href="../HTML/Chap1Html.html">HTML</a></li>
+                             <li><a href="../CSS/chap1css.html">CSS</a></li>
+                             <li><a href="./chap1js.html">Javascript</a></li>
+                         </ul>
+                     </div>
+                </li>
+                <li><a href="../../index.html#about">Qui sommes nous ?</a></li>
+                <li><a href="../../index.html#Programme">Programme</a></li>
+                <li><a target="_blank" href="../../quiz/quiz.html">QUIZ</a></li>
+                <span class="button">
+                    <li><a target="_blank" href="../../Forms/inscrire.html">S'inscrire</a></li>
+                    <li><a target="_blank" href="../../Forms/connecter.html">Se connecter</a></li>
+                </span>
+            </ul>
+        </nav>
+
+        <div class="head">
+            <h1>Apprennez le Javascript</h1>
+            <h3>Javascript Chapitre 1 : Introduction au Javascript</h3>
+        </div>
+    </header>
+
+
+<!-- *****************************************MAIN***************************************** -->
+    <main>
+        <!-- *****************************************MAIN SECTION ( LES COURS )***************************************** -->
+        <!-- ******Concernant les cours j'ai pas respecté la semantique HTML car 
+        premierement : il n ya pas beaucoup de temps
+        deuxiemment : j'ai compris que ce n'est pas l'essentiels de ce projets
+        c'est pour ca j'ai utilisé des "<br>" -->
+        <section class="main-section">
+            <h1>Introduction à Javascript</h1>
+
+            <section class="contenu" id="titre11">
+                <h2>Introduction à JavaScript</h2>
+                <p>
+                    JavaScript peut changer le contenu HTML <br>
+                    L'une des nombreuses méthodes HTML JavaScript est getElementById().<br>
+                    JavaScript accepte les guillemets doubles et simples.<br>
+                    JavaScript peut modifier les valeurs d'attribut HTML. <br>
+                    JavaScript peut changer les styles HTML (CSS) . Changer le style d'un élément HTML est une variante de la modification d'un attribut HTML.<br>
+                    JavaScript peut masquer les éléments HTML . Le masquage des éléments HTML peut être effectué en modifiant le display style.<br> <br>
+                    <strong style="color: rgb(179, 179, 71);">Le saviez-vous?</strong> <br>
+                    JavaScript et Java sont des langages complètement différents, à la fois dans le concept et dans la conception. JavaScript a été inventé par Brendan Eich en 1995 et est devenu une norme ECMA en 1997. <br>
+                    ECMA-262 est le nom officiel de la norme. ECMAScript est le nom officiel de la langue. <br>
+                </p>
+            </section>
+
+            <section class="contenu" id="titre12">
+                <h2>JavaScript Où aller</h2>
+                <p>
+                    En HTML, le code JavaScript est inséré entre les balises  script  et  /script .  <br>
+                    Les anciens exemples JavaScript peuvent utiliser un attribut de type: < script type = "text / javascript">.
+                    L'attribut type n'est pas obligatoire. JavaScript est le langage de script par défaut en HTML.
+                    Un JavaScript functionest un bloc de code JavaScript, qui peut être exécuté lorsqu'il est «appelé» pour. <br>
+                    Par exemple, une fonction peut être appelée lorsqu'un événement se produit, comme lorsque l'utilisateur clique sur un bouton. <br>
+                    <strong>JavaScript dans < head > ou < body > </strong> <br>
+                    Vous pouvez placer n'importe quel nombre de scripts dans un document HTML. <br>
+                    Les scripts peuvent être placés dans < body >, ou dans la < head > section d'une page HTML, ou dans les deux. <br>
+                    Placer des scripts en bas de l'élément < body > améliore la vitesse d'affichage, car l'interprétation des scripts ralentit l'affichage. <br>
+                    Les scripts externes sont pratiques lorsque le même code est utilisé dans de nombreuses pages Web différentes. Les fichiers JavaScript ont l'extension de fichier .js . <br>
+                    Pour utiliser un script externe, placez le nom du fichier de script dans l' srcattribut (source) d'une < script > balise.
+                </p>
+            </section>
+
+            <section class="contenu" id="titre13">
+                <h2>Sortie JavaScript</h2>
+                <p>
+                    JavaScript peut "afficher" les données de différentes manières: <br>
+                    -Ecrire dans un élément HTML, en utilisant innerHTML. <br>
+                    -Ecriture dans la sortie HTML en utilisant document.write(). <br>
+                    -Ecrire dans une boîte d'alerte, en utilisant window.alert(). <br>
+                    -Ecriture dans la console du navigateur, en utilisant console.log(). <br>
+                    Pour accéder à un élément HTML, JavaScript peut utiliser la document.getElementById(id)méthode. <br> 
+                    L' idattribut définit l'élément HTML. La innerHTML propriété définit le contenu HTML. <br>
+                    La modification de la propriété innerHTML d'un élément HTML est un moyen courant d'afficher des données en HTML. <br>
+                    La méthode document.write () ne doit être utilisée que pour les tests. <br>
+                    En JavaScript, l'objet window est l'objet de portée globale, ce qui signifie que les variables, propriétés et méthodes appartiennent par défaut à l'objet window. Cela signifie également que la spécification du windowmot-clé est facultative. <br>
+                    À des fins de débogage, vous pouvez appeler la console.log()méthode dans le navigateur pour afficher les données.
+                </p>
+            </section>
+
+            <section class="contenu" id="titre14">
+                <h2>Déclarations JavaScript</h2>
+                <p>
+                    Un programme informatique est une liste d '"instructions" à "exécuter" par un ordinateur. <br>
+                    Dans un langage de programmation, ces instructions de programmation sont appelées instructions . <br>
+                    Un programme JavaScript est une liste d' instructions de programmation . <br>
+                    En HTML, les programmes JavaScript sont exécutés par le navigateur Web. <br>
+                    <strong>Déclarations JavaScript</strong> <br>
+                    Les instructions JavaScript sont composées de: <br>
+                    Valeurs, opérateurs, expressions, mots clés et commentaires. <br>
+                    La plupart des programmes JavaScript contiennent de nombreuses instructions JavaScript. <br>
+                    Les instructions sont exécutées, une par une, dans le même ordre où elles sont écrites. <br>
+                    Les programmes JavaScript (et les instructions JavaScript) sont souvent appelés code JavaScript. <br>
+                    Les points-virgules séparent les instructions JavaScript. Ajoutez un point-virgule à la fin de chaque instruction exécutable. <br>
+                    Sur le Web, vous pouvez voir des exemples sans point-virgule.
+                    La fin des instructions par un point-virgule n'est pas obligatoire, mais fortement recommandée.
+                </p>
+            </section>
+        </section>
+
+        <!-- *****************************************Aside ( LE SOMMAIRES )***************************************** -->
+        <aside>
+            <div class="aside-title">
+                <h2>Programme Javascript</h2>
+            </div>
+            <ul>
+                <h4><a href="./chap1js.html">Chapitre 1 : Introduction à Javascript</a></h4>
+                   <li><a href="#titre11">Introduction à JavaScript</a></li>
+                   <li><a href="#titre12">JavaScript Où aller</a></li>
+                   <li><a href="#titre13">Sortie JavaScript</a></li>
+                   <li><a href="#titre14">Déclarations JavaScript</a></li>
+
+                <h4><a href="./chap2js.html">Chapitre 2 : Les bases Javascript</a></h4>
+                   <li><a href="./chap2js.html#titre21">Syntaxe JavaScript</a></li>
+                   <li><a href="./chap2js.html#titre22">Commentaires JavaScript</a></li>
+                   <li><a href="./chap2js.html#titre23">Variables JavaScript</a></li>
+                   <li><a href="./chap2js.html#titre24">Opérateurs JavaScript</a></li>
+
+                <h4><a href="./chap3js.html">Chapitre 3 : Javascript Avancé</a></h4>
+                   <li><a href="./chap3js.html#titre31">Types de données JavaScript</a></li>
+                   <li><a href="./chap3js.html#titre32">Fonctions JavaScript</a></li>
+                   <li><a href="./chap3js.html#titre33">Objets JavaScript</a></li>
+                   <li><a href="./chap3js.html#titre34">Événements JavaScript</a></li>
+            </ul>
+        </aside>
+    </main>
+
+
+    <!--*******************************Button*******************************-->
+    <div class="btn">
+        <div class="btn-back">
+            <button><a href="../../index.html">Revenir à l'accueil<!--chapitre precedant--></a></button>
+        </div>
+        <div class="btn-next">
+            <button><a href="./chap2js.html">Chapiter Suivant</a></button>
+        </div>
+    </div>
+
+    
+
+    <!-- ************************************FOOTER********************************* -->
+    <footer>
+        <div>
+            <ul class="footer-menu">
+                <li>Contactez-nous
+                    <ul class="fmenu1">
+                        <li><a href="mailto:zakaria.brahimi@hotmail.com">zakaria.brahimi@hotmail.com</a></li>
+                        <li><a href="#">(+213)797782090</a></li>
+                        <li><a href="#">023 23 23 23</a></li>
+                    </ul>
+                </li>
+                <li>Nos partenaires
+                    <ul class="fmenu1">
+                        <li><a href="https://openclassrooms.com/fr/" target="_blank">OpenClassRoom.com</a></li>
+                        <li><a href="https://www.udemy.com/fr/" target="_blank">Udemy.com</a></li>
+                        <li><a href="https://www.w3schools.com/" target="_blank">W3School.com</a></li>
+                    </ul>
+                </li>
+                <li>Rubriques du site
+                    <ul class="fmenu1">
+                        <li><a href="../../index.html#about">About us</a></li>
+                        <li><a href="../../index.html#Programme">Programme</a></li>
+                        <li><a target="_blank" href="../../quiz/quiz.html">Quiz</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="copyright">
+            Copyright @ <a href="#">Zakaria Brahimi M1 IL</a>
+        </div>
+    </footer>
+    
+</body>
+</html>

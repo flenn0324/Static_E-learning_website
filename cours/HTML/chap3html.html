@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Chapitre 3 : HTML Avancé </title>
+    <link rel="stylesheet" type="text/css" href="../../style.css">
+    <link rel="stylesheet" type="text/css" href="../courstyle.css">
+</head>
+
+<body>
+
+<!-- *****************************************HEADER***************************************** -->
+    <header>
+        <nav class="menu">
+            <ul class="firstmenu">
+                <li><a href="#">Formations</a>
+                     <div class="sub-menu">
+                         <ul>
+                             <li><a href="./Chap1Html.html">HTML</a></li>
+                             <li><a href="../CSS/chap1css.html">CSS</a></li>
+                             <li><a href="../JS/chap1js.html">Javascript</a></li>
+                         </ul>
+                     </div>
+                </li>
+                <li><a href="../../index.html#about">Qui sommes nous ?</a></li>
+                <li><a href="../../index.html#Programme">Programme</a></li>
+                <li><a target="_blank" href="../../quiz/quiz.html">QUIZ</a></li>
+                <span class="button">
+                    <li><a target="_blank" href="../../Forms/inscrire.html">S'inscrire</a></li>
+                    <li><a target="_blank" href="../../Forms/connecter.html">Se connecter</a></li>
+                </span>
+            </ul>
+        </nav>
+
+        <div class="head">
+            <h1>Apprennez le HTML</h1>
+            <h3>Chapitre 3 : HTML Avancé</h3>
+        </div>
+    </header>
+
+
+<!-- *****************************************MAIN***************************************** -->
+    <main>
+        <!-- *****************************************MAIN SECTION ( LES COURS )***************************************** -->
+        <section class="main-section">
+            <h1>Chapitre 3 : HTML Avancé</h1>
+
+            <section class="contenu" id="titre31">
+                <h2>Liens HTML</h2>
+                <p>
+                    Des liens se trouvent dans presque toutes les pages Web. Les liens permettent aux utilisateurs de cliquer de page en page. <br>
+                    Les liens HTML sont des hyperliens. <br>
+                    Vous pouvez cliquer sur un lien et passer à un autre document. <br>
+                    Lorsque vous déplacez la souris sur un lien, la flèche de la souris se transforme en une petite main. <br>
+                    <strong>Liens HTML - Syntaxe</strong> <br>
+                    La "a" balise HTML définit un lien hypertexte. <br>
+                    L'attribut le plus important de l' < a > élément est l' hrefattribut, qui indique la destination du lien. <br>
+                    Le texte du lien est la partie qui sera visible par le lecteur. <br>
+                    Cliquer sur le texte du lien enverra le lecteur à l'adresse URL spécifiée. <br>
+                    <strong>Liens HTML - L'attribut cible</strong> <br>
+                    Par défaut, la page liée sera affichée dans la fenêtre actuelle du navigateur. Pour changer cela, vous devez spécifier une autre cible pour le lien. <br>
+                    L' target attribut spécifie où ouvrir le document lié. <br>
+                    Exemple : Utilisez target = "_ blank" pour ouvrir le document lié dans une nouvelle fenêtre ou un nouvel onglet du navigateur. <br>
+                    <strong>URL absolues et URL relatives</strong> <br>
+                    Les deux exemples ci-dessus utilisent une URL absolue (une adresse Web complète) dans l' hrefattribut. <br>
+                    Un lien local (un lien vers une page du même site Web) est spécifié avec une URL relative (sans la partie "https: // www").
+                </p>
+            </section>
+
+            <section class="contenu" id="titre32">
+                <h2>Images HTML</h2>
+                <p>
+                    Les images peuvent améliorer la conception et l'apparence d'une page Web. <br>
+                    La < img >balise HTML est utilisée pour incorporer une image dans une page Web. <br>
+                    Les images ne sont pas techniquement insérées dans une page Web; les images sont liées à des pages Web. La < img> balise crée un espace de stockage pour l'image référencée. <br>
+                    La < img >balise est vide, elle contient uniquement des attributs et n'a pas de balise de fermeture. <br>
+                    La < img >balise a deux attributs obligatoires: <br>
+                    1/ src - Spécifie le chemin vers l'image <br>
+                    2/ alt - Spécifie un autre texte pour l'image <br>
+                    <div><p><strong style="color: rgb(153, 153, 54);"> Conseil : </strong><i> un lecteur d'écran est un logiciel qui lit le code HTML et permet à l'utilisateur «d'écouter» le contenu. Les lecteurs d'écran sont utiles pour les personnes malvoyantes ou ayant des difficultés d'apprentissage.</i> </p></div>
+                </p>
+            </section>
+
+            <section class="contenu" id="titre33">
+                <h2>Tableaux HTML</h2>
+                <p>
+                    Les tableaux HTML permettent aux développeurs Web d'organiser les données en lignes et en colonnes. <br>
+                    La < table >balise définit un tableau HTML. <br>
+                    Chaque ligne de tableau est définie avec une < tr >balise. Chaque en-tête de tableau est défini avec une < th >balise. Chaque donnée / cellule du tableau est définie avec une < td >balise. <br>
+                    Par défaut, le texte des < th >éléments est en gras et centré. <br>
+                    Par défaut, le texte des < td >éléments est régulier et aligné à gauche. <br>
+                    Voici un exemple de code: <br>
+                    <img width="100%" src="./photohtml3.PNG" alt="exemple code"> <br>
+                    <div><p><strong style="color: red;"> Remarque : </strong><i> les < td >éléments sont les conteneurs de données de la table.
+                        Ils peuvent contenir toutes sortes d'éléments HTML; texte, images, listes, autres tableaux, etc..</i> </p></div>
+
+                </p>
+            </section>
+
+            <section class="contenu" id="titre34">
+                <h2>Attribut de classe HTML</h2>
+                <p>
+                    L' class attribut HTML est utilisé pour spécifier une classe pour un élément HTML. <br>
+                    Plusieurs éléments HTML peuvent partager la même classe. <br>
+                    L' class attribut est souvent utilisé pour pointer vers un nom de classe dans une feuille de style. Il peut également être utilisé par un JavaScript pour accéder et manipuler des éléments avec le nom de classe spécifique. <br>
+                    Dans l'exemple suivant, nous avons deux < span > éléments avec un classattribut avec la valeur "note". Les deux < span > éléments seront stylés de la même manière selon la .note définition de style dans la section head : <br>
+                    <img width="100%" src="./photohtml4.PNG" alt="exemple code"> <br>
+                    <strong>Classes multiples</strong> <br>
+                    Les éléments HTML peuvent appartenir à plusieurs classes. <br>
+                    Pour définir plusieurs classes, séparez les noms de classe par un espace, par exemple < div class = "city main" >. L'élément sera stylisé en fonction de toutes les classes spécifiées. <br>
+                </p>
+            </section>
+        </section>
+
+        <!-- *****************************************Aside ( LE SOMMAIRES )***************************************** -->
+        <aside>
+            <div class="aside-title">
+                <h2>Programme HTML</h2>
+            </div>
+            <ul>
+                <h4><a href="./Chap1Html.html">Chapitre 1 : Introduction au HTML</a></h4>
+                   <li><a href="./Chap1Html.html#titre11">Qu'est-ce que le HTML?</a></li>
+                   <li><a href="./Chap1Html.html#titre12">Qu'est-ce qu'un élément HTML?</a></li>
+                   <li><a href="./Chap1Html.html#titre13">Navigateurs Web</a></li>
+                   <li><a href="./Chap1Html.html#titre14">Structure de la page HTML</a></li>
+
+                <h4><a href="./Chap2html.html">Chapitre 2 : Les bases HTML</a></h4>
+                   <li><a href="./Chap2html.html#titre21">Basiques</a></li>
+                   <li><a href="./Chap2html.html#titre22">Éléments HTML</a></li>
+                   <li><a href="./Chap2html.html#titre23">Attributs HTML</a></li>
+                   <li><a href="./Chap2html.html#titre24">En-têtes HTML</a></li>
+
+                <h4><a href="./chap3html.html">Chapitre 3 : HTML Avancé</a></h4>
+                   <li><a href="#titre31">Liens HTML - L'attribut cible</a></li>
+                   <li><a href="#titre32">Images HTML</a></li>
+                   <li><a href="#titre33">HTML Tables</a></li>
+                   <li><a href="#titre34">Attribut de classe HTML</a></li>
+            </ul>
+        </aside>
+    </main>
+
+
+    <!--*******************************Button*******************************-->
+    <div class="btn">
+        <div class="btn-back">
+            <button><a href="./Chap2html.html">chapitre precedant</a></button>
+        </div>
+        <div class="btn-next">
+            <button><a href="../CSS/chap1css.html">Allez vers CSS !</a></button>
+        </div>
+    </div>
+
+    
+
+    <!-- ************************************FOOTER********************************* -->
+    <footer>
+        <div>
+            <ul class="footer-menu">
+                <li>Contactez-nous
+                    <ul class="fmenu1">
+                        <li><a href="mailto:zakaria.brahimi@hotmail.com">zakaria.brahimi@hotmail.com</a></li>
+                        <li><a href="#">(+213)797782090</a></li>
+                        <li><a href="#">023 23 23 23</a></li>
+                    </ul>
+                </li>
+                <li>Nos partenaires
+                    <ul class="fmenu1">
+                        <li><a href="https://openclassrooms.com/fr/" target="_blank">OpenClassRoom.com</a></li>
+                        <li><a href="https://www.udemy.com/fr/" target="_blank">Udemy.com</a></li>
+                        <li><a href="https://www.w3schools.com/" target="_blank">W3School.com</a></li>
+                    </ul>
+                </li>
+                <li>Rubriques du site
+                    <ul class="fmenu1">
+                        <li><a href="../../index.html#about">About us</a></li>
+                        <li><a href="../../index.html#Programme">Programme</a></li>
+                        <li><a target="_blank" href="../../quiz/quiz.html">Quiz</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="copyright">
+            Copyright @ <a href="#">Zakaria Brahimi M1 IL</a>
+        </div>
+    </footer>
+    
+</body>
+</html>

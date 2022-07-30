@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <!--lien vers document style.css pour le footer-->
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <!--lien vers document courstyle.css pour le header-->
+    <link rel="stylesheet" type="text/css" href="../cours/courstyle.css">
+    <!--lien vers document quiz.css pour stylè le main-->
+    <link rel="stylesheet" href="./quiz.css">
+    <!--lien vers document quiz.js pour le calculer la note-->
+    <script type="text/javascript" src="./quiz.js"></script>
+</head>
+
+<body>
+    <!--*******************************************HEADER*******************************************************-->
+    <header>
+        <nav class="menu">
+            <ul class="firstmenu">
+                <li><a href="#">Formations</a>
+                     <div class="sub-menu">
+                         <ul>
+                             <li><a target="_blank" href="../cours/HTML/Chap1Html.html">HTML</a></li>
+                             <li><a target="_blank" href="../cours/CSS/chap1css.html">CSS</a></li>
+                             <li><a target="_blank" href="../cours/JS/chap1js.html">Javascript</a></li>
+                         </ul>
+                     </div>
+                </li>
+                <li><a href="../index.html#about">Qui sommes nous ?</a></li>
+                <li><a href="../index.html#Programme">Programme</a></li>
+                <li><a href="quiz.html">QUIZ</a></li>
+                <span class="button">
+                    <li><a target="_blank" href="../Forms/inscrire.html">S'inscrire</a></li>
+                    <li><a target="_blank" href="../Forms/connecter.html">Se connecter</a></li>
+                </span>
+            </ul>
+        </nav>
+
+        <div class="head">
+            <h1>BIENVENU DANS LE QUIZ</h1>
+        </div>
+    </header>
+
+
+    <!--*******************************************MAIN*******************************************************-->
+    <main>
+    <!--**************************Description du quiz*******************************-->
+      <div class="quiz">
+        <h1>Description de quiz:</h1>
+        <p>Vous pouvez tester vos compétences HTML avec notre QUIZ.</p>
+        <p>Le test contient 20 questions et il n'y a pas de limite de temps.</p>
+        <p>Le test n'est pas officiel, c'est juste un bon moyen de voir à quel point vous en savez ou ne savez pas sur les 3 langages (HTML/CSS/JAVASCRIPT).</p>
+        <p>Le test est en 4 parties , une partie pour chaque langage + une partie pour des questions generales, chaque partie de langage contient 6 questions.</p>
+        <h2>Comptez votre score</h2>
+        <p>
+          Vous obtiendrez 1 point pour chaque réponse correcte. À la fin du Quiz, votre score total sera affiché. Le score maximum est de 20 points.
+        </p>
+        <p>A la fin du Quiz, votre score sera affiché.</p>
+        <p>Vous pouvez voir les reponses juste en vert et vos reponses faux en rouge.</p>
+        <p>Vous pouvez commencez le quiz maintenant :</p>
+      </div>
+
+        <!--********************LE QUIZ COMMENCE LA***********************************-->
+        <!--******Questions Generales********-->
+        <fieldset>
+            <legend>Partie generale</legend>
+            <h2>Question 1 : C'est quoi un développeur web frontend ?</h2>
+            <ul>
+              <li>
+               <input type="radio" id="q01" name="question1">
+               <label for="q01" id="q01r">Son territoire est le côté visuel du site</label>
+              </li>
+              <li>
+               <input type="radio" id="q02" name="question1">
+               <label for="q02" id="q02r">Son territoire est le côté back du site</label>
+              </li>
+            </ul>
+            <hr>
+            <h2>Question 2 : Quel langage de programmation utilise le développeur front end ?</h2>
+            <ul>
+              <li>
+               <input type="radio" id="q11" name="question2">
+               <label for="q11" id="q11r">PHP et SQL</label>
+              </li>
+              <li>
+               <input type="radio" id="q12" name="question2">
+               <label for="q12" id="q12r">HTML et CSS</label>
+              </li>
+            </ul>
+        </fieldset>
+
+    <!--*********Questions HTML************-->
+        <fieldset>
+            <legend>Partie HTML</legend>
+            <h2>Question 3 : Quel est le doctype d'un document HTML5 ?</h2>
+            <ul>
+              <li>
+               <input type="radio" id="q21" name="question3">
+               <label for="q21" id="q21r">< !DOCTYPE html PUBLIC "-//W3C//DTD HTML5.0 Strict//EN" ></label>
+              </li>
+              <li>
+               <input type="radio" id="q22" name="question3">
+               <label for="q22" id="q22r">< !DOCTYPE html ></label>
+              </li>
+            </ul>
+            <hr>
+            <h2>Question 4 : Quelle est la syntaxe pour déclarer l'encodage des caractères du document en UTF-8 ?</h2>
+            <ul>
+              <li>
+               <input type="radio" id="q31" name="question4">
+               <label for="q31" id="q31r">< meta encoding="text/html; charset=utf-8" ></label>
+              </li>
+              <li>
+               <input type="radio" id="q32" name="question4">
+               <label for="q32" id="q32r">< meta charset="utf-8" ></label>
+              </li>
+            </ul>
+            <hr>
+            <h2>Question 5 : Quelle nouvelle balise de section permet de regrouper un contenu tangentiel au contenu principal du document ?</h2>
+            <ul>
+              <li>
+               <input type="radio" id="q41" name="question5">
+               <label for="q41" id="q41r">< aside ></label>
+              </li>
+              <li>
+               <input type="radio" id="q42" name="question5">
+               <label for="q42" id="q42r">< section id="sidebar" ></label>
+              </li>
+            </ul>
+            <hr>
+            <h2>Question 6 : Quelle est la méthode pour associer une légende complète à une illustration ?</h2>
+            <ul>
+              <li>
+               <input type="radio" id="q51" name="question6">
+               <label for="q51" id="q51r">< figure >< img src="image.jpg">< figcaption >La légende...</ figcaption></ figure></label>
+              </li>
+              <li>
+               <input type="radio" id="q52" name="question6">
+               <label for="q52" id="q52r">< figure>< legend>La légende...</ legend>< img src="image.jpg"></ figure></label>
+              </li>
+            </ul>
+            <hr>
+            <h2>Question 7 : Comment représenter une barre de progression à 50% d'avancement ?</h2>
+            <ul>
+              <li>
+               <input type="radio" id="q61" name="question7">
+               <label for="q61" id="q61r">< progress value="50" max="100">50%</ progress> </label>
+              </li>
+              <li>
+               <input type="radio" id="q62" name="question7">
+               <label for="q62" id="q62r">< input type="progress" value="0.5">50%</ progress></label>
+              </li>
+            </ul>
+            <hr>
+            <h2>Question 8 : Quel attribut permet d'afficher une image par défaut pour l'élément < video> ?</h2>
+            <ul>
+              <li>
+               <input type="radio" id="q71" name="question8">
+               <label for="q71" id="q71r">< video poster="apercu.jpg" ></ video></label>
+              </li>
+              <li>
+               <input type="radio" id="q72" name="question8">
+               <label for="q72" id="q72r">< video preview="apercu.jpg" ></ video></label>
+              </li>
+            </ul>
+        </fieldset>
+
+    <!--***********Questions CSS****************-->
+        <fieldset>
+            <legend>Partie CSS</legend>
+            <h2>Question 9 : Que doit-on écrire en CSS pour appliquer un style aux balises de titre de niveau 2 et 3 ?</h2>
+            <ul>
+              <li>
+               <input type="radio" id="q81" name="question9">
+               <label for="q81" id="q81r">h2 , h3</label>
+              </li>
+              <li>
+               <input type="radio" id="q82" name="question9">
+               <label for="q82" id="q82r">h2 + h3</label>
+              </li>
+            </ul>
+            <hr>
+            <h2>Question 10 : Quelle est la particularité de l'attribut class par rapport à l'attribut id ?</h2>
+            <ul>
+              <li>
+               <input type="radio" id="q91" name="question10">
+               <label for="q91" id="q91r">class est utilisable dans les vieilles versions de HTML mais pas id</label>
+              </li>
+              <li>
+               <input type="radio" id="q92" name="question10">
+               <label for="q92" id="q92r">Il ne peut y avoir qu'un seul et même nom d'id par page, et plusieurs fois une même classe</label>
+              </li>
+            </ul>
+            <hr>
+            <h2>Question 11 : Laquelle de ces couleurs correspond à du blanc ?</h2>
+            <ul>
+              <li>
+               <input type="radio" id="q001" name="question11">
+               <label for="q001" id="q001r">#FFFFFF</label>
+              </li>
+              <li>
+               <input type="radio" id="q002" name="question11">
+               <label for="q002" id="q002r">#000</label>
+              </li>
+            </ul>
+            <hr>
+            <h2>Question 12 : Lequel de ces alignements fait prendre au texte toute la largeur disponible ?</h2>
+            <ul>
+              <li>
+               <input type="radio" id="q011" name="question12">
+               <label for="q011" id="q011r">center</label>
+              </li>
+              <li>
+               <input type="radio" id="q012" name="question12">
+               <label for="q012" id="q012r">justify</label>
+              </li>
+            </ul>
+            <hr>
+            <h2>Question 13 : Si je donne la valeur 1 à la propriété opacity sur un élément, que se passera-t-il ?</h2>
+            <ul>
+              <li>
+               <input type="radio" id="q021" name="question13">
+               <label for="q021" id="q021r">L'élément sera très très légèrement transparent</label>
+              </li>
+              <li>
+               <input type="radio" id="q022" name="question13">
+               <label for="q022" id="q022r">L'élément sera opaque</label>
+              </li>
+            </ul>
+            <hr>
+            <h2>Question 14 : Vrai ou faux ? On peut donner une image de fond à un paragraphe de texte.</h2>
+            <ul>
+              <li>
+               <input type="radio" id="q031" name="question14">
+               <label for="q031" id="q031r">Faux</label>
+              </li>
+              <li>
+               <input type="radio" id="q032" name="question14">
+               <label for="q032" id="q032r">Vrai</label>
+              </li>
+            </ul>
+        </fieldset> 
+
+    <!--***********Questions JS****************-->
+        <fieldset>
+            <legend>Partie JavaScript</legend>
+            <h2>Question 15 : Quelles propositions correspondent à des types primitifs en JavaScript ?</h2>
+            <ul>
+              <li>
+               <input type="radio" id="q041" name="question15">
+               <label for="q041" id="q041r">Number</label>
+              </li>
+              <li>
+               <input type="radio" id="q042" name="question15">
+               <label for="q042" id="q042r">Array</label>
+              </li>
+            </ul>
+            <hr>
+            <h2>Question 16 : Quelles phrases ci-dessous sont vraies au sujet des constantes ?</h2>
+            <ul>
+              <li>
+               <input type="radio" id="q051" name="question16">
+               <label for="q051" id="q051r">Une fois déclarées, leur valeur ne peut être modifiée.</label>
+              </li>
+              <li>
+               <input type="radio" id="q052" name="question16">
+               <label for="q052" id="q052r">On peut déclarer une constante sans l'initialiser.</label>
+              </li>
+            </ul>
+            <hr>
+            <h2>Question 17 : En JavaScript, un object est déclaré comme une liste de paires clé/valeur entre…</h2>
+            <ul>
+              <li>
+               <input type="radio" id="q061" name="question17">
+               <label for="q061" id="q061r"> crochets.</label>
+              </li>
+              <li>
+               <input type="radio" id="q062" name="question17">
+               <label for="q062" id="q062r"> accolades.</label>
+              </li>
+            </ul>
+            <hr>
+            <h2>Question 18 : On déclare un array (tableau) comme une liste d'éléments, séparés par des virgules, entre… </h2>
+            <ul>
+              <li>
+               <input type="radio" id="q071" name="question18">
+               <label for="q071" id="q071r">accolades.</label>
+              </li>
+              <li>
+               <input type="radio" id="q072" name="question18">
+               <label for="q072" id="q072r"> crochets.</label>
+              </li>
+            </ul>
+            <hr>
+            <h2>Question 19 : Qu'est-ce que le DOM ?</h2>
+            <ul>
+              <li>
+               <input type="radio" id="q081" name="question19">
+               <label for="q081" id="q081r">Une interface de programmation qui permet d'accéder aux éléments d'une page web</label>
+              </li>
+              <li>
+               <input type="radio" id="q082" name="question19">
+               <label for="q082" id="q082r">Un nouveau langage de programmation</label>
+              </li>
+            </ul>
+            <hr>
+            <h2>Question 20 : Que peut-on dire du langage JavaScript ?</h2>
+            <ul>
+              <li>
+               <input type="radio" id="q091" name="question20">
+               <label for="q091" id="q091r">Qu'il est synchrone et multi-thread</label>
+              </li>
+              <li>
+               <input type="radio" id="q092" name="question20">
+               <label for="q092" id="q092r">Qu'il est synchrone et mono-thread</label>
+              </li>
+            </ul>
+        </fieldset>
+     
+        
+        <!--*************** button pour Valider le quiz a la fin *****************-->
+        <div id="valider">
+            <input type="button" value="valider" onclick="note();" >
+        </div>
+
+        <!--*************** Affichage de la note *****************-->
+        <div id="resultat">
+            <p class="score">Votre score est <span id="point"></span>/20</p>
+            <p>Vous pouvez revenir à l'acceuill en cliquant <a href="../index.html">ici</a></p>
+        </div>
+  
+    </main>
+
+
+    <!-- *******************************************FOOTER******************************************************* -->
+    <footer>
+        <div>
+            <ul class="footer-menu">
+                <li>Contactez-nous
+                    <ul class="fmenu1">
+                        <li><a href="mailto:zakaria.brahimi@hotmail.com">zakaria.brahimi@hotmail.com</a></li>
+                        <li><a href="#">(+213)797782090</a></li>
+                        <li><a href="#">023 23 23 23</a></li>
+                    </ul>
+                </li>
+                <li>Nos partenaires
+                    <ul class="fmenu1">
+                        <li><a href="https://openclassrooms.com/fr/" target="_blank">OpenClassRoom.com</a></li>
+                        <li><a href="https://www.udemy.com/fr/" target="_blank">Udemy.com</a></li>
+                        <li><a href="https://www.w3schools.com/" target="_blank">W3School.com</a></li>
+                    </ul>
+                </li>
+                <li>Rubriques du site
+                    <ul class="fmenu1">
+                        <li><a href="../index.html#about">About us</a></li>
+                        <li><a href="../index.html#Programme">Programme</a></li>
+                        <li><a href="quiz.html">Quiz</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="copyright">
+            Copyright @ <a href="#">Zakaria Brahimi M1 IL</a>
+        </div>
+    </footer>
+
+
+</body>
+</html>

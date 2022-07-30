@@ -1,0 +1,167 @@
+body p
+{
+    font-size: 17px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/*header*/
+header
+{
+    width: 100%;
+    margin-bottom: 10px;
+    border-color: white;
+    background-color: cadetblue;
+    box-shadow: 0px 10px 14px -1px #6b6b6b;
+    /*position: sticky; top: 0;*/
+}
+/*first header*/
+.head
+{
+    background-color: #0e5658!important;
+}
+.menu
+{
+    border-color: white !important;
+    border-bottom: solid;
+    padding-bottom: 3px;
+    box-shadow: none;
+}
+/*2nd header*/
+.firstmenu
+{
+    margin: 0;
+}
+.head h3
+{
+    margin-top: 17px;
+    margin-right: 20px;
+    color: white;
+}
+.head h1
+{
+    margin: 10px;
+    margin-left: 20px;
+}
+
+
+/*main section*/
+main
+{
+    width: 100%;
+}
+.main-section 
+{
+    display: inline-block;
+    width: 65%;
+    margin-left: 15px;
+    padding: 25px;
+    padding-top: 0px;
+    box-shadow: 0px 10px 14px -1px #000000;
+}
+.main-section h1
+{
+    text-align: center;
+    font-size: 40px;
+    color: #0e5658;
+}
+
+/*aside*/
+aside
+{
+    float: right;
+    width: 25%;
+    margin-right: 15px;
+    box-shadow: 0px 10px 14px -1px #000000;
+}
+.main-section , aside
+{
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    background-color: white;
+}
+.aside-title
+{
+    width: 100%;
+    margin-bottom: 10px;
+    border-bottom: solid;
+    border-color: white;
+    background-color: cadetblue;
+    text-align: center;
+    padding-top: 2px ;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: white;
+}
+aside ul
+{
+    margin-bottom: 30px;
+}
+aside a
+{
+    color: black;
+}
+aside a:hover
+{
+    color: cadetblue;
+    font-size: 15px;
+}
+
+
+/*button*/
+.btn 
+{
+    width: 65%;
+    margin-left: 26px;
+}
+.btn-back , .btn-next
+{
+    margin: 25px;
+}
+.btn-next button , .btn-back button
+{
+    background-color: #0e5658;
+    border-radius: 20px;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    font-size: 16px;
+}
+.btn-next button:hover , .btn-back button:hover
+{
+    background-color: cadetblue;
+    cursor: pointer;
+}
+.btn-back button:hover
+{
+    background-color: rgb(141, 34, 34);
+}
+.btn-back
+{
+    display: inline-block;
+}
+.btn-next
+{
+    float: right;
+}
+
+/* contenu */ 
+.contenu
+{
+    border-style: solid;
+    border-width: 1px;
+    padding: 15px;
+    margin-bottom: 25px;
+}
+.contenu p
+{
+    line-height: 2;
+}
+.contenu h2
+{
+    font-size: 30px;
+    margin-bottom: 0.2em;
+    margin-top: 0.2em;
+    color: cadetblue;
+}
+

@@ -1,0 +1,93 @@
+
+main li 
+{
+    list-style: none;
+    margin-bottom: 10px;
+}
+/*partie description*/
+.quiz
+{
+  margin: 30px;
+  padding: 10px;
+}
+.quiz h1 , .quiz h2
+{
+  color: #0e5658;
+}
+/*fieldset*/
+main fieldset
+{
+    margin: 30px;
+    padding: 18px;
+    border-radius: 30px;
+    border-color: cadetblue;
+    box-shadow: 0px 10px 14px -1px #6b6b6b;
+}
+main legend
+{
+    font-size: 30px;
+    text-align: center;
+    background-color: #0e5658;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+main h2
+{
+    font-size: 20px;
+}
+/*label + input*/
+label
+{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+label:hover
+{
+  font-size: 15px;
+  color: cadetblue;
+  cursor: pointer;
+}
+input[type=button]
+{
+    width: 10%;
+    padding: 10px;
+    background-color: #0e5658;
+    border-style: none;
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
+    border-style: solid;
+}
+input[type=button]:hover
+{
+    background-color: cadetblue;
+    border-style: solid;
+    border-color: #0e5658;
+    cursor: pointer;
+}
+
+/*affichage des resultats*/
+#resultat
+{
+    visibility: hidden;
+    text-align: center;
+}
+#valider
+{
+    text-align: center;
+}
+#resultat a
+{
+  color: blue;
+  text-decoration: underline;
+}
+.score
+{
+  font-size: 25px;
+  color: white;
+  background-color: #0e5658;
+}
+#point
+{
+  font-size: 28px;
+}

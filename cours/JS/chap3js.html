@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Chapitre 3 : Javascript Avancé</title>
+    <link rel="stylesheet" type="text/css" href="../../style.css">
+    <link rel="stylesheet" type="text/css" href="../courstyle.css">
+</head>
+
+<body>
+
+<!-- *****************************************HEADER***************************************** -->
+<!-- ******Concernant les cours j'ai pas respecté la semantique HTML car 
+        premierement : il n ya pas beaucoup de temps
+        deuxiemment : j'ai compris que ce n'est pas l'essentiels de ce projets
+        c'est pour ca j'ai utilisé des "<br>" -->
+    <header>
+        <nav class="menu">
+            <ul class="firstmenu">
+                <li><a href="#">Formations</a>
+                     <div class="sub-menu">
+                         <ul>
+                             <li><a href="../HTML/Chap1Html.html">HTML</a></li>
+                             <li><a href="../CSS/chap1css.html">CSS</a></li>
+                             <li><a href="./chap1js.html">Javascript</a></li>
+                         </ul>
+                     </div>
+                </li>
+                <li><a href="../../index.html#about">Qui sommes nous ?</a></li>
+                <li><a href="../../index.html#Programme">Programme</a></li>
+                <li><a target="_blank" href="../../quiz/quiz.html">QUIZ</a></li>
+                <span class="button">
+                    <li><a target="_blank" href="../../Forms/inscrire.html">S'inscrire</a></li>
+                    <li><a target="_blank" href="../../Forms/connecter.html">Se connecter</a></li>
+                </span>
+            </ul>
+        </nav>
+
+        <div class="head">
+            <h1>Apprennez le Javascript</h1>
+            <h3>Chapitre 3 : Javascript Avancé</h3>
+        </div>
+    </header>
+
+
+<!-- *****************************************MAIN***************************************** -->
+    <main>
+        <!-- *****************************************MAIN SECTION ( LES COURS )***************************************** -->
+        <section class="main-section">
+            <h1>Javascript Avancé</h1>
+
+            <section class="contenu" id="titre31">
+                <h2>Types de données JavaScript</h2>
+                <p>
+                    Les variables JavaScript peuvent contenir de nombreux types de données : nombres, chaînes, objets et plus. <br>
+                    En programmation, les types de données sont un concept important. <br>
+                    Pour pouvoir opérer sur des variables, il est important de connaître le type. <br>
+                    Sans types de données, un ordinateur ne peut pas résoudre ce problème en toute sécurité. <br>
+                    Lors de l'ajout d'un nombre et d'une chaîne, JavaScript traitera le nombre comme une chaîne. <br>
+                    JavaScript évalue les expressions de gauche à droite. Différentes séquences peuvent produire des résultats différents. <br>
+                    JavaScript a des types dynamiques. Cela signifie que la même variable peut être utilisée pour contenir différents types de données. <br>
+                    Une chaîne (ou une chaîne de texte) est une série de caractères comme "John Doe". <br>
+                    Les chaînes sont écrites avec des guillemets. Vous pouvez utiliser des guillemets simples ou doubles. <br>
+                    Vous pouvez utiliser des guillemets dans une chaîne, tant qu'ils ne correspondent pas aux guillemets entourant la chaîne. <br>
+                    Les booléens ne peuvent avoir que deux valeurs: true ou false. <br>
+                    Les tableaux JavaScript sont écrits entre crochets. <br>
+                    Les éléments du tableau sont séparés par des virgules. <br>
+                </p>
+            </section>
+
+            <section class="contenu" id="titre32">
+                <h2>Fonctions JavaScript</h2>
+                <p>
+                    Une fonction JavaScript est un bloc de code conçu pour effectuer une tâche particulière. <br>
+                    Une fonction JavaScript est exécutée lorsque "quelque chose" l'invoque (l'appelle). <br>
+                    <strong>Syntaxe de la fonction Javascript</strong> <br>
+                    Une fonction JavaScript est définie avec le functionmot - clé, suivi d'un nom , suivi de parenthèses () . <br>
+                    Les noms de fonction peuvent contenir des lettres, des chiffres, des traits de soulignement et des signes dollar (mêmes règles que les variables). <br>
+                    Les parenthèses peuvent inclure des noms de paramètres séparés par des virgules: ( paramètre1, paramètre2, ... ) <br>
+                    Le code à exécuter, par la fonction, est placé entre accolades: {} <br>
+                    Les paramètres de fonction sont répertoriés entre parenthèses () dans la définition de fonction. <br>
+                    Les arguments de fonction sont les valeurs reçues par la fonction lorsqu'elle est appelée. <br>
+                    À l'intérieur de la fonction, les arguments (les paramètres) se comportent comme des variables locales. <br>
+                    Une fonction est sensiblement la même qu'une procédure ou un sous-programme, dans d'autres langages de programmation. <br>
+                    <strong>Retour de fonction</strong>
+                    Lorsque JavaScript atteint une returninstruction, la fonction s'arrête de s'exécuter. <br>
+                    Si la fonction a été appelée à partir d'une instruction, JavaScript "retournera" pour exécuter le code après l'instruction d'appel. <br>
+                    Les fonctions calculent souvent une valeur de retour . La valeur de retour est "renvoyée" à l '"appelant". <br>
+                </p>
+            </section>
+
+            <section class="contenu" id="titre33">
+                <h2>Objets JavaScript</h2>
+                <p>
+                    Dans la vraie vie, une voiture est un objet . <br>
+                    Une voiture a des propriétés telles que le poids et la couleur, ainsi que des méthodes telles que le démarrage et l'arrêt. <br>
+                    Toutes les voitures ont les mêmes propriétés , mais les valeurs des propriétés diffèrent d'une voiture à l'autre. <br>
+                    Toutes les voitures ont les mêmes méthodes , mais les méthodes sont effectuées à des moments différents . <br>
+                    <strong>Objets JavaScript</strong> <br>
+                    Vous avez déjà appris que les variables JavaScript sont des conteneurs pour les valeurs de données. <br>
+                    Ce code attribue une valeur simple (Fiat) à une variable nommée voiture <br>
+                    Les objets sont aussi des variables. Mais les objets peuvent contenir de nombreuses valeurs. <br>
+                    Ce code attribue de nombreuses valeurs (Fiat, 500, blanc) à une variable nommée voiture <br>
+                    Les valeurs sont écrites sous forme de paires nom: valeur (nom et valeur séparés par deux points). <br>
+                    Les objets JavaScript sont des conteneurs pour des valeurs nommées appelées propriétés ou méthodes. <br>
+                    <strong>Méthodes d'objet</strong> <br>
+                    Les objets peuvent également avoir des méthodes . <br>
+                    Les méthodes sont des actions qui peuvent être effectuées sur des objets. <br>
+                    Les méthodes sont stockées dans les propriétés en tant que définitions de fonction . <br>
+                    Une méthode est une fonction stockée en tant que propriété.
+                </p>
+            </section>
+
+            <section class="contenu" id="titre34">
+                <h2>Événements JavaScript</h2>
+                <p>
+                    Les événements HTML sont des «choses» qui arrivent aux éléments HTML. <br>
+                    Lorsque JavaScript est utilisé dans les pages HTML, JavaScript peut "réagir" à ces événements. <br>
+                    Un événement HTML peut être une action du navigateur ou une action d'un utilisateur. <br>
+                    Voici quelques exemples d'événements HTML: <br>
+                    -Une page Web HTML a fini de se charger <br>
+                    -Un champ de saisie HTML a été modifié <br>
+                    -Un bouton HTML a été cliqué <br>
+                    Souvent, lorsque des événements se produisent, vous voudrez peut-être faire quelque chose. <br>
+                    JavaScript vous permet d'exécuter du code lorsque des événements sont détectés. <br>
+                    HTML permet d' ajouter des attributs de gestionnaire d'événements, avec du code JavaScript , aux éléments HTML. <br>
+                    Le code JavaScript comporte souvent plusieurs lignes. Il est plus courant de voir des attributs d'événement appelant des fonctions. <br>
+                    <strong>Que peut faire JavaScript?</strong> <br>
+                    Les gestionnaires d'événements peuvent être utilisés pour gérer et vérifier les entrées utilisateur, les actions utilisateur et les actions du navigateur: <br>
+                    -Ce qui doit être fait à chaque fois qu'une page se charge <br>
+                    -Choses à faire lorsque la page est fermée <br>
+                    -Action à effectuer lorsqu'un utilisateur clique sur un bouton <br>
+                    -Contenu à vérifier lorsqu'un utilisateur entre des données <br>
+                    -Et plus ... <br>
+                    De nombreuses méthodes différentes peuvent être utilisées pour laisser JavaScript fonctionner avec les événements: <br>
+                    -Les attributs d'événement HTML peuvent exécuter directement du code JavaScript <br>
+                    -Les attributs d'événement HTML peuvent appeler des fonctions JavaScript <br>
+                    -Vous pouvez attribuer vos propres fonctions de gestionnaire d'événements aux éléments HTML <br>
+                    -Vous pouvez empêcher l'envoi ou la gestion des événements <br>
+                    -Et plus ... <br>
+                </p>
+            </section>
+        </section>
+
+        <!-- *****************************************Aside ( LE SOMMAIRES )***************************************** -->
+        <aside>
+            <div class="aside-title">
+                <h2>Programme Javascript</h2>
+            </div>
+            <ul>
+                <h4><a href="./chap1js.html">Chapitre 1 : Introduction à Javascript</a></h4>
+                   <li><a href="./chap1js.html#titre11">Introduction à JavaScript</a></li>
+                   <li><a href="./chap1js.html#titre12">JavaScript Où aller</a></li>
+                   <li><a href="./chap1js.html#titre13">Sortie JavaScript</a></li>
+                   <li><a href="./chap1js.html#titre14">Déclarations JavaScript</a></li>
+
+                <h4><a href="./chap2js.html">Chapitre 2 : Les bases Javascript</a></h4>
+                   <li><a href="./chap2js.html#titre21">Syntaxe JavaScript</a></li>
+                   <li><a href="./chap2js.html#titre22">Commentaires JavaScript</a></li>
+                   <li><a href="./chap2js.html#titre23">Variables JavaScript</a></li>
+                   <li><a href="./chap2js.html#titre24">Opérateurs JavaScript</a></li>
+
+                <h4><a href="./chap3js.html">Chapitre 3 : Javascript Avancé</a></h4>
+                   <li><a href="#titre31">Types de données JavaScript</a></li>
+                   <li><a href="#titre32">Fonctions JavaScript</a></li>
+                   <li><a href="#titre33">Objets JavaScript</a></li>
+                   <li><a href="#titre34">Événements JavaScript</a></li>
+            </ul>
+        </aside>
+    </main>
+
+
+    <!--*******************************Button*******************************-->
+    <div class="btn">
+        <div class="btn-back">
+            <button><a href="./chap2js.html">chapitre precedant</a></button>
+        </div>
+        <div class="btn-next">
+            <button><a href="../../quiz/quiz.html">Passez le Quiz !</a></button>
+        </div>
+    </div>
+
+    
+
+    <!-- ************************************FOOTER********************************* -->
+    <footer>
+        <div>
+            <ul class="footer-menu">
+                <li>Contactez-nous
+                    <ul class="fmenu1">
+                        <li><a href="mailto:zakaria.brahimi@hotmail.com">zakaria.brahimi@hotmail.com</a></li>
+                        <li><a href="#">(+213)797782090</a></li>
+                        <li><a href="#">023 23 23 23</a></li>
+                    </ul>
+                </li>
+                <li>Nos partenaires
+                    <ul class="fmenu1">
+                        <li><a href="https://openclassrooms.com/fr/" target="_blank">OpenClassRoom.com</a></li>
+                        <li><a href="https://www.udemy.com/fr/" target="_blank">Udemy.com</a></li>
+                        <li><a href="https://www.w3schools.com/" target="_blank">W3School.com</a></li>
+                    </ul>
+                </li>
+                <li>Rubriques du site
+                    <ul class="fmenu1">
+                        <li><a href="../../index.html#about">About us</a></li>
+                        <li><a href="../../index.html#Programme">Programme</a></li>
+                        <li><a target="_blank" href="../../quiz/quiz.html">Quiz</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="copyright">
+            Copyright @ <a href="#">Zakaria Brahimi M1 IL</a>
+        </div>
+    </footer>
+    
+</body>
+</html>
